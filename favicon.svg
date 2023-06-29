@@ -1,53 +1,30 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
-<svg
-   width="5.5999985mm"
-   height="5.5999985mm"
-   viewBox="0 0 5.5999985 5.5999985"
-   version="1.1"
-   id="svg5"
-   xml:space="preserve"
-   inkscape:export-filename="favicon.svg"
-   inkscape:export-xdpi="50.800026"
-   inkscape:export-ydpi="50.800026"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:svg="http://www.w3.org/2000/svg"><sodipodi:namedview
-     id="namedview7"
-     pagecolor="#ffffff"
-     bordercolor="#000000"
-     borderopacity="0.25"
-     inkscape:showpageshadow="2"
-     inkscape:pageopacity="0.0"
-     inkscape:pagecheckerboard="0"
-     inkscape:deskcolor="#d1d1d1"
-     inkscape:document-units="mm"
-     showgrid="false"
-     showguides="false" /><defs
-     id="defs2" /><g
-     inkscape:label="Layer 1"
-     inkscape:groupmode="layer"
-     id="layer1"
-     transform="translate(-82.552004,-126.05201)"><circle
-       style="fill:#4e254a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.0244438;stroke-opacity:1"
-       id="path111"
-       cx="85.351662"
-       cy="128.85167"
-       inkscape:export-filename="favicon.svg"
-       inkscape:export-xdpi="25.4"
-       inkscape:export-ydpi="25.4"
-       r="2" /></g><style
-     id="style1772">
-    * {
-      stroke: #760172;
-    }
-
-    /* Dark mode */
-    @media (prefers-color-scheme: dark) {
-      * {
-        stroke: #FFF;
-      }
-    }
-  </style></svg>
+<svg width="45" height="43" viewBox="0 0 45 43" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g filter="url(#filter0_d_1_3)">
+<path d="M39.0153 14.6765L17.3866 4.27457L6.98471 25.9033L28.6134 36.3052L39.0153 14.6765Z" fill="#FCFCFC"/>
+<path d="M38.0306 14.996L18.2043 5.46097L9.96943 22.5837L29.7957 32.1188L38.0306 14.996Z" fill="#31363B"/>
+</g>
+<g filter="url(#filter1_d_1_3)">
+<path d="M29 4H5V28H29V4Z" fill="#FCFCFC"/>
+<path d="M28 5H6V24H28V5Z" fill="#31363B"/>
+</g>
+<defs>
+<filter id="filter0_d_1_3" x="1.98471" y="0.274567" width="42.0306" height="42.0306" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+</filter>
+<filter id="filter1_d_1_3" x="0" y="0" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="1"/>
+<feGaussianBlur stdDeviation="2.5"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.2 0"/>
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_1_3"/>
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_1_3" result="shape"/>
+</filter>
+</defs>
+</svg>
