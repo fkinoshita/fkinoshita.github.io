@@ -108,7 +108,6 @@ main {
 
   max-width: 600px;
   margin: 0 auto;
-  margin-bottom: 7em;
   padding-inline: 1em;
 }
 
@@ -133,4 +132,22 @@ a:hover {
 
 a:visited {
   color: #9141ac;
+}
+
+footer {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+
+  max-width: 600px;
+  margin: 0 auto;
+
+  padding-inline: 1em;
+  padding-block: 4em;
+}
+
+footer p {
+  opacity: 0.55;
+
+  font-size: 18px;
 }
