@@ -26,6 +26,37 @@ body {
   }
 }
 
+.shape {
+  position: absolute;
+  border-radius: .5em;
+  opacity: .25;
+  z-index: -1;
+}
+
+.square {
+  top: 8em;
+  right: 2em;
+
+  width: 10em;
+  aspect-ratio: 1; 
+  rotate: 20deg;
+
+  background-color: #33d17a;
+
+  overflow: overlay;
+}
+
+.rectangle {
+  top: 10em;
+  left: -8em;
+
+  width: 10em;
+  aspect-ratio: 1 / 3;
+  rotate: -16deg;
+
+  background-color: #3584e4;
+}
+
 h1, h2, h3, h4, h5, h6, p {
   margin-top: 1em;
 }
@@ -64,6 +95,10 @@ main {
   margin: 0 auto;
   margin-bottom: 7em;
   padding-inline: 1em;
+}
+
+section {
+  position: relative;
 }
 
 section p {
