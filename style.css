@@ -40,6 +40,24 @@ body {
   z-index: -1;
 }
 
+@keyframes floating {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(25px, 25px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes floating_other {
+  0% { transform: translate(0, 0); }
+  50% { transform: translate(-25px, -25px); }
+  100% { transform: translate(0, 0); }
+}
+
+@keyframes rotating {
+  0% { rotate: -16deg; }
+  50% { rotate: -8deg; }
+  100% { rotate: -16deg; }
+}
+
 .square {
   top: 8em;
   right: 2em;
@@ -51,6 +69,11 @@ body {
   background-color: var(--light-green);
 
   overflow: overlay;
+
+  animation-name: floating;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 .rectangle {
@@ -62,6 +85,12 @@ body {
   rotate: -16deg;
 
   background-color: var(--light-blue);
+
+  animation-name: rotating;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
 }
 
 .circle {
@@ -73,6 +102,11 @@ body {
   aspect-ratio: 1;
 
   background-color: var(--light-yellow);
+
+  animation-name: floating_other;
+  animation-duration: 45s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
 @media (prefers-color-scheme: dark) {
