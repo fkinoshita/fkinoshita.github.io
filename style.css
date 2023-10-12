@@ -6,6 +6,8 @@
   --light-blue: #3584e4;
   --dark-green: #26a269;
   --dark-blue: #1a5fb4;
+  --light-yellow: #f9f06b;
+  --dark-yellow: #e5a50a;
 }
 
 .unselectable {
@@ -62,6 +64,17 @@ body {
   background-color: var(--light-blue);
 }
 
+.circle {
+  top: 15em;
+  right: -8em;
+
+  width: 12em;
+  border-radius: 100vh;
+  aspect-ratio: 1;
+
+  background-color: var(--light-yellow);
+}
+
 @media (prefers-color-scheme: dark) {
   .square {
     background-color: var(--dark-green);
@@ -69,6 +82,10 @@ body {
 
   .rectangle {
     background-color: var(--dark-blue);
+  }
+
+  .circle {
+    background-color: var(--dark-yellow);
   }
 }
 
