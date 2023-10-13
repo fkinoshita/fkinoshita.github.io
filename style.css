@@ -24,6 +24,8 @@ body {
   font-size: 20px;
   font-family: Inter, system-ui;
   line-height: 1.6;
+
+  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
