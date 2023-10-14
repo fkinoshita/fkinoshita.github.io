@@ -24,8 +24,6 @@ body {
   font-size: 20px;
   font-family: Inter, system-ui;
   line-height: 1.6;
-
-  overflow-x: hidden;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -95,22 +93,6 @@ body {
 
 }
 
-.circle {
-  top: 15em;
-  right: -8em;
-
-  width: 12em;
-  border-radius: 100vh;
-  aspect-ratio: 1;
-
-  background-color: var(--light-yellow);
-
-  animation-name: floating_other;
-  animation-duration: 45s;
-  animation-iteration-count: infinite;
-  animation-timing-function: ease-in-out;
-}
-
 @media (prefers-color-scheme: dark) {
   .square {
     background-color: var(--dark-green);
@@ -118,10 +100,6 @@ body {
 
   .rectangle {
     background-color: var(--dark-blue);
-  }
-
-  .circle {
-    background-color: var(--dark-yellow);
   }
 }
 
