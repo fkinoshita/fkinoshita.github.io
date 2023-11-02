@@ -110,7 +110,7 @@ main {
 }
 
 .list li + li {
-  padding-block: 0.75em;
+  padding-top: 0.50em;
 }
 
 .list li::marker {
