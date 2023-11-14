@@ -64,7 +64,8 @@ main {
 }
 
 .divided h2 {
-  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 @media (max-width: 899px) {
@@ -99,9 +100,4 @@ main {
 
 a {
   color: var(--fg-color);
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
 }
