@@ -35,7 +35,7 @@ main {
 }
 
 .title {
-  max-width: 537px;
+  max-width: fit-content;
 }
 
 .all {
@@ -59,8 +59,7 @@ main {
 }
 
 .divided > div:nth-child(1) {
-  min-width: 135px;
-  max-width: 135px;
+  width: 130px;
 }
 
 .divided h2 {
@@ -83,6 +82,7 @@ main {
 
   .all {
     flex-direction: row;
+    gap: 1.5em;
   }
 
   .divided {
