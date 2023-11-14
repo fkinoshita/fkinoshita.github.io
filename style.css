@@ -107,3 +107,9 @@ main {
 a {
   color: var(--fg-color);
 }
+
+a:hover {
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-decoration: none;
+}
