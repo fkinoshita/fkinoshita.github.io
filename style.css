@@ -67,6 +67,12 @@ main {
   font-weight: bold;
 }
 
+.text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
 @media (max-width: 899px) {
 
 
