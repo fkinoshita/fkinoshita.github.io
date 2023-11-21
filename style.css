@@ -105,8 +105,6 @@ main {
 }
 
 a {
-  padding-inline: 0.1em;
-
   color: var(--fg-color);
 }
 
