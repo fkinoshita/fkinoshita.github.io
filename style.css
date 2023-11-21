@@ -38,6 +38,10 @@ main {
   max-width: fit-content;
 }
 
+.title h1 > a {
+  text-decoration: none;
+}
+
 .all {
   display: flex;
   flex-direction: column;
