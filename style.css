@@ -24,88 +24,59 @@ body {
 }
 
 main {
-  margin-block: 2em;
-
   display: flex;
   flex-direction: column;
   gap: 3em;
-
-  max-width: 50ch;
-  padding-inline: 1em;
 }
 
-.title {
-  max-width: fit-content;
+h2 {
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
-.title h1 > a {
-  text-decoration: none;
+h3 {
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.padded {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
 }
 
 .all {
   display: flex;
   flex-direction: column;
   gap: 3em;
+
+  max-width: 43ch;
+  margin: 0 auto;
+  padding: 1em;
 }
 
-.content {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-}
-
-.divided {
+.title {
   display: grid;
   gap: 1em;
   grid-template-columns: 1fr;
 
+  max-width: fit-content;
+
   color: var(--primary);
 }
 
-.divided > div:nth-child(1) {
-  width: 130px;
+.title h1 > a {
+  text-decoration: none;
 }
 
-.divided h2 {
-  text-transform: uppercase;
-  font-weight: bold;
+.title > div:nth-child(1) {
+  width: 130px;
 }
 
 .text {
   display: flex;
   flex-direction: column;
   gap: 0.5em;
-}
-
-@media (max-width: 899px) {
-
-
-  .hidden-on-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 900px) {
-  main {
-    max-width: 75ch;
-  }
-
-  .all {
-    flex-direction: row;
-    gap: 1.5em;
-  }
-
-  .divided {
-    grid-template-columns: 1fr 3fr;
-  }
-
-  .divided > div:nth-child(1) {
-    text-align: end;
-  }
-
-  .hidden-on-desktop {
-    display: none;
-  }
 }
 
 a {
