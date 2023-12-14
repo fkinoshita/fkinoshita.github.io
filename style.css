@@ -99,7 +99,7 @@ a:hover {
   text-decoration: none;
 }
 
-a[href="https://felipekinoshita.com"] {
+a.no-decoration {
   text-decoration: none;
 }
 
