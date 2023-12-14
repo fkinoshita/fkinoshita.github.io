@@ -98,6 +98,10 @@ a {
   color: var(--fg-color);
 }
 
+a[target="_blank"] {
+  text-decoration-style: dotted;
+}
+
 a:hover {
   color: var(--bg-color);
   background-color: var(--fg-color);
