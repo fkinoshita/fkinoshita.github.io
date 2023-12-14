@@ -1,6 +1,7 @@
 @font-face {
   font-family: "CMU Serif";
   src: url("./fonts/cmu_concrete_serif.otf");
+  font-display: swap;
 }
 
 :root {
