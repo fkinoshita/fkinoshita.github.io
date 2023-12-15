@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "CMU Serif";
-  src: url("./fonts/cmu_concrete_serif.otf");
-  font-display: swap;
-}
+@import url("./fonts/cmu-serif/cmu-serif.css");
 
 :root {
   --bg-color: #f7fdf9;
