@@ -5,10 +5,13 @@
   </div>
 
   {{ .Content }}
-  <ul>
-  {{ range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
-  {{ end }}
-  </ul>
+
+  <div class="padded">
+
+    {{ range .Pages }}
+      <div><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+    {{ end }}
+
+  </div>
 {{ end }}
 
