@@ -2,7 +2,7 @@
 title = "Mathematical Logic"
 tags = ["mathematics", "logic"]
 lastmod = "2023-12-18"
-draft = true
+draft = false
 +++
 
 ## **Abstract**
