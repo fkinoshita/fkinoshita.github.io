@@ -5,6 +5,9 @@ copyright = "GNU General Public License 3.0"
 theme = "paper"
 pygmentsCodeFences = true
 
+[params]
+	favicon = "favicon.ico"
+
 [author]
 	name = "Felipe Kinoshita"
 
