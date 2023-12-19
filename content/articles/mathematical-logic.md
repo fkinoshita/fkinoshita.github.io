@@ -26,9 +26,7 @@ The Disjunction operator &or; is true when either *P* or *Q* are true, it's only
 
 The Exclusive Disjunction operator &oplus; is true when either *P* or *Q* are different and false when they're equal.
 
-#### Example
-
-&not;*P* means "Felipe is not hungry" and *P*&and;*Q* means "Felipe is hungry and he's lazy".
+**Example**. &not;*P* means "Felipe is not hungry" and *P*&and;*Q* means "Felipe is hungry and he's lazy".
 
 ### Truth Tables
 
