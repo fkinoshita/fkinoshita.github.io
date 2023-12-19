@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+<header class="centered">
+  <h1>{{ .Title }}</h1>
+  <div class="padded">
+    <h2>Felipe Kinoshita</h2>
+    <h3>{{ .Lastmod | time.Format "January 2, 2006" }}</h3>
+  </div>
+</header>
+
+{{ .Content }}
+
+{{ end }}
+
