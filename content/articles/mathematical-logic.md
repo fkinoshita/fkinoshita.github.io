@@ -21,6 +21,14 @@ Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy", either statements
 
 Operators can act on propositions, allowing us to form more complex statements. Some operators are &not;, &and;, &or;, and &oplus;, being negation, conjunction, disjunction, and exclusive disjunction respectively.
 
+The Negation operator &not; simply negates whatever value the proposition already has, if *P* is true than *&not;P* becomes false and vice versa.
+
+The Conjunction operator &and; is only true when both *P* and *Q* are true, otherwise it's always false.
+
+The Disjunction operator &or; is true when either *P* or *Q* are true, it's only false when both are false.
+
+The Exclusive Disjunction operator &oplus; is true when either *P* or *Q* are different and false when they're equal.
+
 #### Example
 
 &not;*P* means "Felipe is not hungry" and *P*&and;*Q* means "Felipe is hungry and he's lazy".
