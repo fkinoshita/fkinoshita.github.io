@@ -13,9 +13,7 @@ A quick guide to understanding mathematical logic and its purpose on laying the 
 
 Propositions are statements must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
 
-#### Example
-
-Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy", either statements can only be true or false, not anything in between.
+**Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy", either statements can only be true or false, not anything in between.
 
 ### Operators
 
