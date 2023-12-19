@@ -4,6 +4,11 @@ title = "Felipe Kinoshita"
 copyright = "GNU General Public License 3.0"
 theme = "paper"
 pygmentsCodeFences = true
+enableGitInfo = true
+
+[frontmatter]
+	date = ["date", "publishDate", "lastmod"]
+	lastmod = ["lastmod", ":git", "date", "publishDate"]
 
 [params]
 	favicon = "favicon.ico"
