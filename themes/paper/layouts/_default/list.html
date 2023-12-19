@@ -1,17 +1,20 @@
 {{ define "main" }}
-  <div>
+
+  <header>
     <h1>{{ .Title }}</h1>
-    <a href="https://felipekinoshita.com">Go Back &#8617;</a>
-  </div>
+    <div>
+      <a href="https://felipekinoshita.com">Go Back &#8617;</a>
+    </div>
+  </header>
+
+  <br>
 
   {{ .Content }}
 
-  <div class="padded">
+  <br>
 
-    {{ range .Pages }}
-      <div><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
-    {{ end }}
-
-  </div>
+  {{ range .Pages }}
+    <div><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+  {{ end }}
 {{ end }}
 
