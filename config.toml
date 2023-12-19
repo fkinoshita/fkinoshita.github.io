@@ -1,0 +1,29 @@
+baseURL = "https://felipekinoshita.com"
+languageCode = "en-us"
+title = "Felipe Kinoshita"
+copyright = "GNU General Public License 3.0"
+theme = "paper"
+pygmentsCodeFences = true
+
+[author]
+	name = "Felipe Kinoshita"
+
+# [taxonomies]
+# 	tag = "tags"
+
+[outputs]
+	home = ["HTML"]
+	# section = ["HTML", "RSS", "Atom"]
+
+# [mediaTypes."application/atom+xml"]
+# 	suffixes = ["xml"]
+
+# [outputFormats.RSS]
+# 	mediaType = "application/xml"
+# 	baseName = "rss"
+# [outputFormats.Atom]
+# 	mediaType = "application/atom+xml"
+# 	baseName = "atom"
+
+[markup.goldmark.renderer]
+	unsafe = true
