@@ -14,7 +14,7 @@ Propositions are statements must be either true or false. We generally indicate 
 
 **Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy", either statements can only be true or false, not anything in between.
 
-### Operators
+<h3 class="centered">2. Operators</h3>
 
 Operators can act on propositions, allowing us to form more complex statements. Some operators are &not;, &and;, &or;, and &oplus;, being negation, conjunction, disjunction, and exclusive disjunction respectively.
 
@@ -28,7 +28,7 @@ The Exclusive Disjunction operator &oplus; is true when either *P* or *Q* are di
 
 **Example**. &not;*P* means "Felipe is not hungry" and *P*&and;*Q* means "Felipe is hungry and he's lazy".
 
-### Truth Tables
+<h3 class="centered">3. Truth Tables</h3>
 
 Truth tables allow us to see all possible proposition combinations, the amount of lines is always equal to 2<sup>*n*</sup>, where *n* is all propositions used.
 
@@ -44,16 +44,13 @@ Truth tables allow us to see all possible proposition combinations, the amount o
 | T | F | F |
 | T | T | T |
 
-|*P*|*Q*|*P&or;Q*|
-|---|---|---|
-| F | F | F |
-| F | T | T |
-| T | F | T |
-| T | T | T |
-
-|*P*|*Q*|*P&oplus;Q*|
-|---|---|---|
-| F | F | F |
-| F | T | T |
-| T | F | T |
-| T | T | F |
+|*P*|*Q*|*R*|(*P&or;Q*)&and;*R*|
+|---|---|---|---|
+| F | F | F | F |
+| F | F | T | F |
+| F | T | F | F |
+| F | T | T | T |
+| T | F | F | F |
+| T | F | T | T |
+| T | T | F | F |
+| T | T | T | T |
