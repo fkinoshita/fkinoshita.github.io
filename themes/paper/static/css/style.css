@@ -181,3 +181,13 @@ table th {
 .centered {
   text-align: center;
 }
+
+.logic {
+  font-size: 12pt;
+  font-style: italic;
+}
+
+.border {
+  width: 10%;
+  border-bottom: 1px solid var(--fg-color);
+}
