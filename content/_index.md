@@ -6,8 +6,7 @@ lastmod = "2023-12-18"
 ## **Abstract**
 
 I'm Felipe Kinoshita. I contribute to open-source software and participate on the <a href="https://www.gnome.org" target="_blank" rel="me">GNOME</a> community.
-I'm interested in a variety of different topics, including [mathematics](/tags/mathematics/), programming languages, virtual machines,
-<a href="https://wiki.xxiivv.com/site/permacomputing.html" target="_blank">permacomputing</a>, linguistics, and many more.
+This website serves as a repository for my ideas, projects, and experiments. You can check some things I've written [here](/articles).
 
 <h3 id="contact" class="centered"><a class="no-decoration" href="#contact">1. Contact</a></h3>
 
