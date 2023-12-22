@@ -10,9 +10,9 @@ A quick guide to understanding mathematical logic and its purpose on laying the 
 
 {{< section "2" "1. Propositions" >}}
 
-Propositions are statements must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
+Propositions are statements that must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
 
-**Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy", either statements can only be true or false, not anything in between.
+**Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy".
 
 {{< section "2" "2. Operators" >}}
 
@@ -41,13 +41,35 @@ Truth tables allow us to see all possible proposition combinations, the amount o
 | T | F | F |
 | T | T | T |
 
-|*P*|*Q*|*R*|(*P&or;Q*)&and;*R*|
-|---|---|---|---|
-| F | F | F | F |
-| F | F | T | F |
-| F | T | F | F |
-| F | T | T | T |
-| T | F | F | F |
-| T | F | T | T |
-| T | T | F | F |
-| T | T | T | T |
+We can use truth tables to check if a statement is valid, consider the following example:
+
+It will either rain or snow tomorrow.<br>
+It’s too warm for snow.<br>
+Therefore, it will rain.<br>
+
+This has the logical form of:
+
+{{< logic >}}
+
+P&or;Q
+<br>
+&not;Q
+<br>
+<div class="border"></div>
+&there4;P
+
+{{< /logic >}}
+
+Let *P* stand for "It will rain tomorrow" and let *Q* stand for "It will snow tomorrow".
+
+|*P*|*Q*|*P&or;Q*|*&not;Q*|*P*|
+|---|---|---|---| --- |
+| F | F | F | T | F |
+| F | T | T | F | F |
+| T | F | T | T | T |
+| T | T | T | F | T |
+
+From left to right we have, *P* and *Q* (propositions), *P&or;Q* and *&not;Q* (premises), and finally *P* (conclusion).
+
+By looking at the truth table (third line) we can see that when both our premises are true, our conclusion is also true,
+so we can conclude that the statement is valid.
