@@ -1,0 +1,5 @@
+{{if eq (.Get 0) "2" }}
+    <h2 class="centered">{{ .Get 1 }}</h2>
+{{ else if eq (.Get 0) "3"}}
+    <h3 class="centered">{{ .Get 1 }}</h3>
+{{end}}
