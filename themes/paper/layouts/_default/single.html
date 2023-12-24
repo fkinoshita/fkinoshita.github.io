@@ -3,8 +3,11 @@
 <header class="centered">
   <h1>{{ .Title }}</h1>
   <div class="padded">
-    <h2><a class="no-decoration" href="https://felipekinoshita.com">Felipe Kinoshita</a></h2>
-    <h3>{{ .Lastmod | time.Format "January 2, 2006" }}</h3>
+    <h2>
+      <a class="no-decoration" href="https://felipekinoshita.com">Felipe Kinoshita</a>
+      <br>
+      {{ .Lastmod | time.Format "January 2, 2006" }}
+    </h2>
   </div>
 </header>
 
