@@ -41,6 +41,8 @@ Truth tables allow us to see all possible proposition combinations, the amount o
 | T | F | F |
 | T | T | T |
 
+#### 3.1 Checking the validity of statements
+
 We can use truth tables to check if a statement is valid, consider the following example:
 
 It will either rain or snow tomorrow.<br>
