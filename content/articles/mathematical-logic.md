@@ -10,7 +10,7 @@ A quick guide to understanding mathematical logic and its purpose on laying the 
 
 {{< /abstract >}}
 
-### 1 Propositions
+### 1 Sentencial Logic
 
 Propositions are statements that must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
 
