@@ -98,6 +98,7 @@ a.no-decoration {
 
 table {
   width: fit-content;
+  margin: 1em auto;
 
   font-size: 12pt;
   border-collapse: collapse;
