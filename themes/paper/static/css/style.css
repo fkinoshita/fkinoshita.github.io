@@ -32,26 +32,29 @@ body {
   line-height: 1.6;
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
   margin-top: 3em;
   margin-bottom: 0.5em;
 }
 
+p {
+  margin-top: 1em;
+}
+
 h1 {
-  margin-top: 4em;
-  font-size: 36px;
+  font-size: 2em;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 1em;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 1.3em;
 }
 
 h4 {
-  font-size: 22px;
+  font-size: 1.15em;
 }
 
 b, strong {
@@ -66,51 +69,13 @@ sup {
   vertical-align: super;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5em;
-}
-
-header h1,
-header h2,
-header h3 {
-  margin-bottom: unset;
-}
-
-header h2,
-header h3 {
-  margin-top: unset;
-}
-
-main {
-  display: flex;
-  flex-direction: column;
-  gap: 1em;
-}
-
-ol {
-  list-style: inside;
-  list-style-type: decimal;
-}
-
-ul {
-  list-style: inside;
-}
-
-ol li,
-ul li {
+ul, ol {
   margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
-ol li:first-child,
-ul li:first-child {
-  margin-top: 0em;
-}
-
-ol li:last-child,
-ul li:last-child {
-  margin-bottom: 2em;
+li {
+  margin-top: 1.25em;
 }
 
 a {
@@ -155,12 +120,6 @@ table th {
   border-bottom: 1px solid var(--fg-color);
 }
 
-.padded {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5em;
-}
-
 .all {
   display: flex;
   flex-direction: column;
@@ -168,26 +127,9 @@ table th {
 
   max-width: 55ch;
   margin: 0 auto;
-  margin-bottom: 4em;
   padding: 2em;
-
-  text-align: start;
-}
-
-.bold {
-  font-weight: 700;
 }
 
 .centered {
   text-align: center;
-}
-
-.logic {
-  font-size: 12pt;
-  font-style: italic;
-}
-
-.border {
-  width: 10%;
-  border-bottom: 1px solid var(--fg-color);
 }

@@ -1,20 +1,10 @@
 {{ define "main" }}
-
-  <header>
-    <h1>{{ title .Title }}</h1>
-    <div>
-      <a href="/">Go Back &#8617;</a>
-    </div>
-  </header>
-
-  <br>
-
   {{ .Content }}
 
-  <br>
-
+  <ul>
   {{ range .Pages }}
-    <div><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></div>
+    <li><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></li>
   {{ end }}
+  </ul>
 {{ end }}
 
