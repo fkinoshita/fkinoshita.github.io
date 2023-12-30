@@ -8,14 +8,21 @@
 }
 
 :root {
-  --bg-color: #f7fdf9;
+  --bg-color: #fafafa;
   --fg-color: #06190e;
+
+  --link-color: #1a5fb4;
+  --link-underline: #99c1f1;
+  --link-visited-color: #613583;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #06190e;
-    --fg-color: #f7fdf9;
+    --fg-color: #fafafa;
+    --link-color: #99c1f1;
+    --link-underline: #1a5fb4;
+    --link-visited-color: #9141ac;
   }
 }
 
@@ -82,12 +89,21 @@ table th {
   padding: 0 2em;
 }
 
-a:hover {
-  color: var(--bg-color);
-  background-color: var(--fg-color);
-  text-decoration-color: var(--fg-color);
+a {
+  color: var(--link-color);
+  text-decoration-color: var(--link-underline);
 }
 
 a[target="_blank"] {
   text-decoration-style: dotted;
+}
+
+a:visited {
+  color: var(--link-visited-color);
+}
+
+a:hover {
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-decoration-color: var(--fg-color);
 }
