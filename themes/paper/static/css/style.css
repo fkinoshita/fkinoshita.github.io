@@ -61,7 +61,7 @@ li + li {
 
 table {
   width: fit-content;
-  margin: 2em;
+  margin: 2em auto;
 
   font-size: 18px;
   border-collapse: collapse;
