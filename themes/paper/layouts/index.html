@@ -1,20 +1,14 @@
 {{ partial "head.html" . }}
 
-<header class="centered">
-	<h1><a class="no-decoration" href="https://felipekinoshita.com">Personal Website</a></h1>
-	<h2>
-		Felipe Kinoshita
-		<br>
-		{{ .Lastmod | time.Format "January 2, 2006" }}
-	</h2>
+<header>
+	<h1>Welcome to my Website</h1>
 </header>
 
-<div>
-	<h2><strong>Abstract</strong></h2>
+<main>
 	<p>
 		{{ .Content }}
 	</p>
-</div>
+</main>
 
 <footer>
 	{{ partial "footer.html" . }}

@@ -1,5 +1,5 @@
 @font-face {
-	font-family: "CMU Serif";
+	font-family: "CMU Serif Roman";
 	font-style: normal;
 	font-weight: 400;
 	src: local("CMU Serif Roman"), local("CMUSerif-Roman"), url('/font/cmu-serif-roman-latin.woff2') format("woff2");
@@ -26,81 +26,37 @@
 
 body {
   color: var(--fg-color);
-	background: var(--bg-color);
+  background: var(--bg-color);
+  font-family: 'CMU Serif Roman', sans-serif;
   font-size: 20px;
-  font-family: "CMU Serif", serif, system-ui;
   line-height: 1.6;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 3em;
-  margin-bottom: 0.5em;
-}
-
-p {
-  margin-top: 1em;
+h1, h2, h3 {
+  margin-top: 2.5em;
+  max-width: 2em;
 }
 
 h1 {
-  font-size: 2em;
+  font-size: 3em;
+  line-height: 1;
 }
 
-h2 {
-  font-size: 1em;
+@media (min-width: 700px) {
+  h1 {
+    font-size: 3.5em;
+  }
 }
 
-h3 {
-  font-size: 1.3em;
-}
-
-h4 {
-  font-size: 1.15em;
-}
-
-b, strong {
-  font-weight: bold;
-}
-
-i, em {
-  font-style: italic;
-}
-
-sup {
-  vertical-align: super;
-}
-
-ul, ol {
-  margin-top: 1.5em;
-  margin-bottom: 1.5em;
-}
-
-li {
-  margin-top: 1.25em;
-}
-
-a {
-  color: var(--fg-color);
-}
-
-a[target="_blank"] {
-  text-decoration-style: dotted;
-}
-
-a:hover {
-  color: var(--bg-color);
-  background-color: var(--fg-color);
-  text-decoration: none;
-}
-
-a.no-decoration {
-  text-decoration: none;
+li + li {
+  margin-top: 1em;
 }
 
 table {
   width: fit-content;
-  margin: 1em auto;
+  margin: 2em;
 
-  font-size: 12pt;
+  font-size: 18px;
   border-collapse: collapse;
 }
 
@@ -121,16 +77,17 @@ table th {
   border-bottom: 1px solid var(--fg-color);
 }
 
-.all {
-  display: flex;
-  flex-direction: column;
-  gap: 3em;
-
-  max-width: 55ch;
-  margin: 0 auto;
-  padding: 2em;
+.content {
+  max-width: 40ch;
+  padding: 0 2em;
 }
 
-.centered {
-  text-align: center;
+a:hover {
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-decoration-color: var(--fg-color);
+}
+
+a[target="_blank"] {
+  text-decoration-style: dotted;
 }

@@ -1,24 +1,19 @@
 {{ partial "head.html" . }}
-  {{ if (eq .Pages.Len 0)}}
-    <header class="centered">
-      <h1>{{ .Title }}</h1>
-      <h2>
-        <a class="no-decoration" href="https://felipekinoshita.com">Felipe Kinoshita</a>
-        <br>
-        {{ .Lastmod | time.Format "January 2, 2006" }}
-      </h2>
-    </header>
-  {{ else }}
-    <header>
-      <h1>{{ title .Title }}</h1>
-      <div>
-        <a href="/">Go Back &#8617;</a>
-      </div>
-    </header>
-  {{ end }}
+
+  <header>
+    <h1>{{ .Title }}</h1>
+    {{ if (eq .Pages.Len 0)}}
+      <p>{{ .Lastmod | time.Format "January 2, 2006" }}</p>
+    {{ end }}
+  </header>
+
+  <div>
+    <a href="/">Go Back &#8617;</a>
+  </div>
 
   <main>
     {{ block "main" . }}
     {{ end }}
   </main>
+
 {{ partial "foot.html" . }}
