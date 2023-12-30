@@ -1,22 +1,18 @@
 +++
-title = "Mathematical Logic"
+title = "Logic in Math"
 tags = ["mathematics", "logic"]
 draft = false
 +++
 
-{{< abstract >}}
-
 A quick guide to understanding mathematical logic and its purpose on laying the foundations of mathemetics.
 
-{{< /abstract >}}
-
-### 1 Sentencial Logic
+## 1 Sentencial Logic
 
 Propositions are statements that must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
 
 **Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy".
 
-#### 1.1 Connective Symbols
+### 1.1 Connective Symbols
 
 We can use words to form more complex statements, here's our first three connective symbols and their meaning:
 
@@ -30,7 +26,7 @@ If *P* and *Q* stand for two statements, then we'll write *P*&and;*Q* for "*P* a
 
 **Example**. Let *P* be "Felipe is short" and let *Q* be "Felipe is quiet". *P*&and;*Q* means "Felipe is short and quiet", *P*&and;&not;*Q* means "Felipe is short but not quiet".
 
-#### 1.2 Truth Tables
+### 1.2 Truth Tables
 
 To better understand how words such as *and*, *or*, and *not* affect the validity of a statement, we can make use of truth tables.
 
