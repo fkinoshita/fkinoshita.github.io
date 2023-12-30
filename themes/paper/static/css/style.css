@@ -55,6 +55,10 @@ h1 {
   }
 }
 
+ol, ul {
+  margin-bottom: 4em;
+}
+
 li + li {
   margin-top: 1em;
 }
