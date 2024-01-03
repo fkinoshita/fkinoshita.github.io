@@ -93,6 +93,10 @@ table th {
   padding: 0 2em;
 }
 
+footer {
+  max-width: 30ch;
+}
+
 a {
   color: var(--link-color);
   text-decoration-color: var(--link-underline);
