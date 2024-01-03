@@ -3,7 +3,7 @@
   <header>
     <h1>{{ .Title }}</h1>
     {{ if (eq .Pages.Len 0)}}
-      <p>{{ .Lastmod | time.Format "January 2, 2006" }}</p>
+      <span class="date">{{ .Lastmod | time.Format "January 2, 2006" }}</span>
     {{ end }}
   </header>
 

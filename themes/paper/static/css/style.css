@@ -88,6 +88,10 @@ table th {
   border-bottom: 1px solid var(--fg-color);
 }
 
+main {
+  margin-top: 3em;
+}
+
 .content {
   max-width: 40ch;
   padding: 0 2em;
@@ -114,4 +118,12 @@ a:hover {
   color: var(--bg-color);
   background-color: var(--fg-color);
   text-decoration-color: var(--fg-color);
+}
+
+.date {
+  display: block;
+
+  margin-top: -1.5em;
+
+  font-size: 1em;
 }
