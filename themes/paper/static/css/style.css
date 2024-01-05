@@ -45,15 +45,8 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: 4em;
-  font-style: italic;
+  font-size: 3.5em;
   line-height: 1;
-}
-
-@media (min-width: 700px) {
-  h1 {
-    font-size: 3.5em;
-  }
 }
 
 ol, ul {
