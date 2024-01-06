@@ -4,6 +4,7 @@ tags = ["mathematics", "logic"]
 draft = false
 +++
 
+## Abstract
 A quick guide to understanding mathematical logic and its purpose on laying the foundations of mathemetics.
 
 ## 1 Sentencial Logic
