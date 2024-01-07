@@ -1,17 +1,14 @@
 {{ partial "head.html" . }}
 
-<header>
-	<h1>This Is My Website</h1>
-</header>
+  <header>
+    <h1>This Is My Website</h1>
+	<span class="date">{{ .Lastmod | time.Format "January 2, 2006" }}</span>
+  </header>
 
-<main>
-	<p>
-		{{ .Content }}
+  <main>
+    <p>
+	  {{ .Content }}
 	</p>
-</main>
-
-<footer>
-	{{ partial "footer.html" . }}
-</footer>
+  </main>
 
 {{ partial "foot.html" . }}
