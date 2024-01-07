@@ -45,6 +45,8 @@ h1, h2, h3 {
 }
 
 h1 {
+  margin-bottom: 0.25em;
+
   font-size: 4em;
   line-height: 1;
 }
@@ -120,8 +122,5 @@ a:hover {
 
 .date {
   display: block;
-
-  margin-top: -1.5em;
-
   font-size: 1em;
 }
