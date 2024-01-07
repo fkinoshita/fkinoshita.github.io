@@ -1,6 +1,5 @@
 +++
 title = "Felipe Kinoshita"
-lastmod = "2023-12-18"
 +++
 
 I'm Felipe Kinoshita. I contribute to open-source software and participate
