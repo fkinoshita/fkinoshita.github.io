@@ -67,3 +67,18 @@ when *P* and *Q* are both true we also consider this to be true, in the case of 
 |  T  |  F  |  T  |  F  |
 |  F  |  T  |  F  |  T  |
 |  F  |  F  |  F  |  T  |
+
+## 2 Universal and Existential Quantifiers
+
+We can use quantifiers to put bounds on what values are to be considered on a 
+given proposition.
+
+| Symbols | Meaning |
+| --- | --- |
+| &forall; | For all |
+| &exist; | There exists |
+
+
+Let's take for example the formulas &forall;*xP*(x) and &exist;*xP*(x), they
+means "For all values of *x*, *P*(x) is true" and "There exists a value of *x*, such that *P*(x) is true" respectively.
+
