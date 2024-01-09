@@ -10,6 +10,7 @@
 :root {
   --bg-color: #fafafa;
   --fg-color: #06190e;
+  --dot-color: #f2f2f2;
 
   --link-color: #1a5fb4;
   --link-underline: #99c1f1;
@@ -20,6 +21,8 @@
   :root {
     --bg-color: #06190e;
     --fg-color: #fafafa;
+    --dot-color: #0b2115;
+    
     --link-color: #99c1f1;
     --link-underline: #1a5fb4;
     --link-visited-color: #9141ac;
@@ -33,10 +36,14 @@
 
 body {
   color: var(--fg-color);
-  background: var(--bg-color);
   font-family: 'CMU Serif Roman', sans-serif;
   font-size: 18px;
   line-height: 1.6;
+  
+  background: var(--bg-color);
+  background-image: radial-gradient(var(--dot-color) 1px, transparent 0);
+  background-size: 16px 16px;
+  background-position: 0px 0px;
 }
 
 h1, h2, h3 {
