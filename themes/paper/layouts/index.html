@@ -1,14 +1,20 @@
 {{ partial "head.html" . }}
 
+<div class="content">
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <ul>
+      <li><a href="/">{{ .Title }}/</a></li>
+    </ul>
+  </nav>
+
   <header>
-    <h1>This Is My Website</h1>
-	<span class="date">{{ .Lastmod | time.Format "January 2, 2006" }}</span>
+    <h1>Preface</h1>
+    <span>Last Updated on {{ .Lastmod | time.Format "January 2, 2006" }}.</span>
   </header>
 
   <main>
-    <p>
-	  {{ .Content }}
-	</p>
+    {{ .Content }}
   </main>
+</div>
 
 {{ partial "foot.html" . }}

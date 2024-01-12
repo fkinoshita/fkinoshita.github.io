@@ -1,19 +1,30 @@
 {{ partial "head.html" . }}
 
-  <header>
+  <nav aria-label="Breadcrumb" class="breadcrumb">
+    <ul>
+      {{- range .Ancestors.Reverse }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{- end }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+    </ul>
+  </nav>
+
+  <header id="top">
     <h1>{{ .Title }}</h1>
     {{ if (eq .Pages.Len 0)}}
-      <span class="date">{{ .Lastmod | time.Format "January 2, 2006" }}</span>
+      <span>Last Updated on {{ .Lastmod | time.Format "January 2, 2006" }}.</span>
     {{ end }}
   </header>
-
-  <div>
-    <a href="/">Go Back &#8617;</a>
-  </div>
 
   <main>
     {{ block "main" . }}
     {{ end }}
   </main>
+
+  {{ if (eq .Pages.Len 0)}}
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
+  {{ end }}
 
 {{ partial "foot.html" . }}

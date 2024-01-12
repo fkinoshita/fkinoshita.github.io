@@ -1,32 +1,28 @@
-@font-face {
-	font-family: "CMU Serif Roman";
-	font-style: normal;
-	font-weight: 400;
-	src: local("CMU Serif Roman"), local("CMUSerif-Roman"), url('/font/cmu-serif-roman-latin.woff2') format("woff2");
-	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215;
-	font-display: swap;
-}
-
 :root {
-  --bg-color: #fafafa;
-  --fg-color: #06190e;
-  --dot-color: #f2f2f2;
+  --bg-color: #fff;
+  --fg-color: #000;
 
   --link-color: #1a5fb4;
   --link-underline: #99c1f1;
   --link-visited-color: #613583;
+
+  --left-margin: 16ch;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg-color: #06190e;
-    --fg-color: #fafafa;
-    --dot-color: #0b2115;
-    
+    --bg-color: #000;
+    --fg-color: #fff;
+
     --link-color: #99c1f1;
     --link-underline: #1a5fb4;
     --link-visited-color: #9141ac;
   }
+}
+
+* {
+  color: var(--fg-color);
+  text-decoration: none;
 }
 
 ::selection {
@@ -35,82 +31,111 @@
 }
 
 body {
-  color: var(--fg-color);
-  font-family: 'CMU Serif Roman', sans-serif;
-  font-size: 18px;
-  line-height: 1.6;
-  
-  background: var(--bg-color);
-  background-image: radial-gradient(var(--dot-color) 1px, transparent 0);
-  background-size: 16px 16px;
-  background-position: 0px 0px;
+  padding: 2em;
+
+  background-color: var(--bg-color);
+
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-h1, h2, h3 {
-  max-width: 2em;
-  margin-top: 2.5em;
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 h1 {
-  margin-bottom: 0.25em;
+  text-transform: uppercase;
 
-  font-size: 4em;
-  line-height: 1;
+  border-bottom: 8px solid var(--fg-color);
 }
 
-h2, h3 {
-  line-height: 1.1;
+h1 + span {
+  text-decoration: underline dotted;
 }
 
-ol, ul {
-  margin-bottom: 4em;
+@media (min-width: 1000px) {
+  h1 + span {
+    margin-left: var(--left-margin);
+  }
 }
 
-li + li {
+h2 {
+  border-bottom: 2px solid var(--fg-color);
+}
+
+p {
   margin-top: 1em;
 }
 
-table {
-  width: fit-content;
-  margin: 2em auto;
-
-  font-size: 18px;
-  border-collapse: collapse;
+@media (min-width: 1000px) {
+  p {
+    margin-left: var(--left-margin);
+  }
 }
 
-table tbody tr {
-  text-align: center;
-}
-
-table caption {
-  padding: 0.5em;
-}
-
-table th,
-table td {
-  padding-inline: 1em;
-}
-
-table th {
-  border-bottom: 1px solid var(--fg-color);
-}
-
-main {
-  margin-top: 4em;
-}
-
-.content {
-  max-width: 40ch;
-  padding: 0 2em;
+em {
+  font-style: italic;
+  font-weight: normal;
 }
 
 footer {
-  max-width: 30ch;
+  display: flex;
+  justify-content: space-between;
+
+  margin-top: 4em;
+  margin-bottom: 2em;
+  padding-top: 0.25em;
+
+  border-top: 2px solid var(--fg-color);
+}
+
+ul, ol {
+  padding: 0;
+  padding-left: 1em;
+}
+
+li {
+  margin-top: 0.25em;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+@media (min-width: 1000px) {
+  ul, ol {
+    margin-left: var(--left-margin);
+  }
+}
+
+table {
+  margin-top: 1em;
+  text-align: left;
+}
+
+@media (min-width: 1000px) {
+  table {
+    margin-left: var(--left-margin);
+  }
+}
+
+th, td {
+  padding-top: 0.25em;
+  padding-bottom: 0.25em;
+  vertical-align: top;
+}
+
+table thead th {
+  width: 25%;
+}
+
+.content {
+  max-width: 60ch;
+  margin: 0 auto;
 }
 
 a {
-  color: var(--link-color);
-  text-decoration-color: var(--link-underline);
+  color: var(--fg-color);
+  text-decoration: underline;
 }
 
 a[target="_blank"] {
@@ -127,7 +152,44 @@ a:hover {
   text-decoration-color: var(--fg-color);
 }
 
-.date {
-  display: block;
-  font-size: 1em;
+.breadcrumb ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb li:not(:last-child)::after {
+  display: inline-block;
+  margin: 0 0.25rem;
+  content: "/";
+}
+
+.truth-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.truth-table table {
+  width: fit-content;
+  border-collapse: collapse;
+}
+
+.truth-table table tbody tr {
+  text-align: center;
+}
+
+.truth-table table caption {
+  padding: 0.5em;
+}
+
+.truth-table table th,
+.truth-table table td {
+  padding-inline: 1em;
+}
+
+.truth-table table th {
+  border-bottom: 1px solid var(--fg-color);
 }
