@@ -5,15 +5,35 @@ draft = false
 markup = "mmark2"
 +++
 
-A quick guide to understanding mathematical logic and its purpose on laying the foundations of mathemetics.
+Let's understand the building blocks of what makes mathematics work.
+Here's a quick guide to mathematical logic including sentential logic, set theory, and proofs.
 
-## Sentential Logic
+If you think something here is wrong or want to chat about this, feel free to contact me on
+<a href="https://mastodon.social/@fkinoshita" target="_blank" rel="me">Mastodon</a>,
+  <a href="https://matrix.to/#/@fkinoshita:gnome.org" target="_blank">Matrix</a>, or
+  send me <a href="https://letterbird.co/kinofhek" target="_blank">email</a>.
 
-Propositions are statements that must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
+## Deductive Reasoning
 
-**Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy".
+Deductive reasoning is essential to understand how proofs work.
 
-## Connective Symbols
+Here's a few examples of deductive reasoning:
+- It will either rain or snow tomorrow.<br>
+  It’s too warm for snow.<br>
+  Therefore, it will rain.
+- Today is either Monday or Thursday.<br>
+  Today is not Monday.<br>
+  Therefore, today is Thursday.
+- If today is raining, then I don't have to go to work tomorrow.<br>
+  It's raining.<br>
+  Therefore, I don't have to go to work tomorrow.
+
+Here we have two kind of statements, *premises* and *conclusions*, from the premises
+we can make conclusions about those statements.
+
+Those statements must be either true or false, and nothing in between. We generally indicate them with the letters *P*, *Q*, *R*, and so on.
+
+## Logical Connectives
 
 We can use words to form more complex statements, here's our first three connective symbols and their meaning:
 
