@@ -1,5 +1,5 @@
 +++
-title = "What I'm Doing Now"
+title = "Now"
 lastmod = "2023-12-30"
 +++
 

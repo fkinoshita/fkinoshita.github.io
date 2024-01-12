@@ -1,5 +1,5 @@
 +++
-title = "Some Projects Of Mine"
+title = "Projects"
 lastmod = "2023-12-29"
 +++
 

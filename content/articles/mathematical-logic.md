@@ -2,18 +2,18 @@
 title = "Logic in Math"
 tags = ["mathematics", "logic"]
 draft = false
+markup = "mmark2"
 +++
 
-## Abstract
 A quick guide to understanding mathematical logic and its purpose on laying the foundations of mathemetics.
 
-## 1 Sentencial Logic
+## Sentential Logic
 
 Propositions are statements that must be either true or false. We generally indicate propositions with the letters *P*, *Q*, *R*, and so on.
 
 **Example**. Let *P* be "Felipe is hungry" and let *Q* be "Felipe is lazy".
 
-### 1.1 Connective Symbols
+## Connective Symbols
 
 We can use words to form more complex statements, here's our first three connective symbols and their meaning:
 
@@ -27,9 +27,11 @@ If *P* and *Q* stand for two statements, then we'll write *P*&and;*Q* for "*P* a
 
 **Example**. Let *P* be "Felipe is short" and let *Q* be "Felipe is quiet". *P*&and;*Q* means "Felipe is short and quiet", *P*&and;&not;*Q* means "Felipe is short but not quiet".
 
-### 1.2 Truth Tables
+## Truth Tables
 
 To better understand how words such as *and*, *or*, and *not* affect the validity of a statement, we can make use of truth tables.
+
+{{< table "truth" >}}
 
 | *P* | *Q* | *P*&and;*Q*
 | --- | --- | --- |
@@ -38,16 +40,24 @@ To better understand how words such as *and*, *or*, and *not* affect the validit
 |  F  |  T  |  F  |
 |  F  |  F  |  F  |
 
+{{< /table >}}
+
 We summarize all possible combinations in the table above, since we assumed *P* and *Q* can only be either true or false, *P*&and;*Q* is only true when both *P* and *Q* are true, otherwise it's false.
 
 The table for &not;*P* is also quite easy to construct since for &not;*P* to be true, *P* must be false.
+
+{{< table "truth" >}}
 
 | *P* | &not;*P* |
 | --- | --- |
 |  T  |  F  |
 |  F  |  T  |
 
+{{< /table >}}
+
 The same can be done for a table for *P*&or;*Q*:
+
+{{< table "truth" >}}
 
 | *P* | *Q* | *P*&or;*Q*
 | --- | --- | --- |
@@ -56,10 +66,14 @@ The same can be done for a table for *P*&or;*Q*:
 |  F  |  T  |  T  |
 |  F  |  F  |  F  |
 
+{{< /table >}}
+
 It's important to note that in mathematics *or* always refers to inclusive or, meaning that in the truth table above
 when *P* and *Q* are both true we also consider this to be true, in the case of a exclusive or that would evaluate to false.
 
 **Example**. Let's make a truth table for the formula &not;(*P*&and;&not;*Q*).
+
+{{< table "truth" >}}
 
 | *P* | *Q* | *P*&and;&not;*Q* | &not;(*P*&and;&not;*Q*)
 | --- | --- | --- | --- |
@@ -68,9 +82,11 @@ when *P* and *Q* are both true we also consider this to be true, in the case of 
 |  F  |  T  |  F  |  T  |
 |  F  |  F  |  F  |  T  |
 
-## 2 Universal and Existential Quantifiers
+{{< /table >}}
 
-We can use quantifiers to put bounds on what values are to be considered on a 
+## Universal and Existential Quantifiers
+
+We can use quantifiers to put bounds on what values are to be considered on a
 given proposition.
 
 | Symbols | Meaning |
