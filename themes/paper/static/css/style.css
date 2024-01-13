@@ -1,3 +1,13 @@
+@font-face {
+	font-family: Atkinson Hyperlegible;
+	font-style: normal;
+	font-weight: 400;
+	src: local("Atkinson Hyperlegible Regular"), local("AtkinsonHyperlegible-Regular"), url('/font/atkinson-hyperlegible-regular-latin.woff2') format("woff2");
+	unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+2000-206F,U+2074,U+20AC,U+2122,U+2212,U+2215;
+	font-display: swap;
+}
+
+
 :root {
   --bg-color: #fff;
   --fg-color: #000;
@@ -6,7 +16,7 @@
   --link-underline: #99c1f1;
   --link-visited-color: #613583;
 
-  --left-margin: 16ch;
+  --left-margin: 14ch;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -35,7 +45,7 @@ body {
 
   background-color: var(--bg-color);
 
-  font-family: sans-serif;
+  font-family: Atkinson Hyperlegible, sans-serif;
   font-size: 16px;
 }
 
@@ -129,7 +139,7 @@ table thead th {
 }
 
 .content {
-  max-width: 60ch;
+  max-width: 50ch;
   margin: 0 auto;
 }
 
