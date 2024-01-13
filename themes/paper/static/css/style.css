@@ -89,6 +89,11 @@ em {
   font-weight: normal;
 }
 
+img {
+  width: 100%;
+  font-style: italic;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
