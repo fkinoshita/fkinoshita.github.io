@@ -115,6 +115,6 @@ given proposition.
 | &exist; | There exists |
 
 
-Let's take for example the formulas &forall;*xP*(x) and &exist;*xP*(x), they
-means "For all values of *x*, *P*(x) is true" and "There exists a value of *x*, such that *P*(x) is true" respectively.
+Let's take for example the formulas &forall;*xP* (x) and &exist;*xP* (x), they
+means "For all values of *x*, *P* (x) is true" and "There exists a value of *x*, such that *P* (x) is true" respectively.
 
