@@ -143,6 +143,17 @@ table thead th {
   margin: 0 auto;
 }
 
+pre {
+  padding: 1em;
+  overflow-x: auto;
+}
+
+@media (min-width: 1000px) {
+  pre {
+    margin-left: var(--left-margin);
+  }
+}
+
 a {
   color: var(--link-color);
   text-decoration: underline;
