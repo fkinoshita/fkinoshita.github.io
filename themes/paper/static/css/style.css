@@ -7,14 +7,11 @@
 	font-display: swap;
 }
 
-
 :root {
   --bg-color: #fff;
   --fg-color: #000;
 
-  --link-color: #1a5fb4;
-  --link-underline: #99c1f1;
-  --link-visited-color: #613583;
+  --link-color: blue;
 
   --left-margin: 14ch;
 }
@@ -24,9 +21,7 @@
     --bg-color: #111;
     --fg-color: #fff;
 
-    --link-color: #99c1f1;
-    --link-underline: #1a5fb4;
-    --link-visited-color: #9141ac;
+    --link-color: blue;
   }
 }
 
@@ -149,22 +144,30 @@ table thead th {
 }
 
 a {
-  color: var(--fg-color);
+  color: var(--link-color);
   text-decoration: underline;
+}
+
+a:visited {
+  color: var(--fg-color);
+}
+
+a:hover {
+  color: var(--bg-color);
+  background-color: var(--fg-color);
+  text-decoration: none;
 }
 
 a[target="_blank"] {
   text-decoration-style: dotted;
 }
 
-a:visited {
-  color: var(--link-visited-color);
+.breadcrumb a {
+  color: var(--fg-color);
 }
 
-a:hover {
+.breadcrumb a:hover {
   color: var(--bg-color);
-  background-color: var(--fg-color);
-  text-decoration-color: var(--fg-color);
 }
 
 .breadcrumb ul {
