@@ -19,7 +19,7 @@ These are the data types you have available on Lisp.
 | Integer    | The number 5, 0, or -120. |
 | Symbol     | a name made out of a string of characters. Example: FOO, BAR, or ONE-TWO. |
 | Nil        | Representing "nothing". |
-| Pair       | A pair have two elements, they can be integers, symbols, nil or another pair. Example: (X . Y).
+| Pair       | A pair has two elements, they can be integers, symbols, nil or another pair. Example: (X . Y).
 
 From here we can start to mix these up to create more complex structures.
 
@@ -60,7 +60,7 @@ To cross the gap and make pairs and lists distinct, let's end our chain of pairs
 (A . (B . (C . NIL)))
 ```
 
-We can now used what's called *list-notation* to remove the extra parenthesis and dots required by *dot-notation*.
+We can now used what's called *list-notation* to remove the extra parentheses and dots required by *dot-notation*.
 
 ```
 (A B C)
