@@ -184,30 +184,3 @@ a[target="_blank"] {
   content: "/";
 }
 
-.truth-table {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.truth-table table {
-  width: fit-content;
-  border-collapse: collapse;
-}
-
-.truth-table table tbody tr {
-  text-align: center;
-}
-
-.truth-table table caption {
-  padding: 0.5em;
-}
-
-.truth-table table th,
-.truth-table table td {
-  padding-inline: 1em;
-}
-
-.truth-table table th {
-  border-bottom: 1px solid var(--fg-color);
-}
