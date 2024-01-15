@@ -67,3 +67,42 @@ What about this next one:
 ```
 
 When trying to reduct this expression we end up going around in circles, it fails to reduce using *Beta Reduction*.
+
+## Beyond Simple Lambdas
+
+Now that we're a bit more familiar with lambda expressions and how they work we can start to built more complex object on top of our simple constructs.
+
+It would be pretty useful if we could have simple logic in our little lambda language, producing true or false values.
+
+Since we don't have anything besides lambda expressions we can make everything up on our own!
+
+Let's define the value of TRUE to be the following expression:
+
+```
+TRUE := (λx.λy.x)
+```
+
+It is a function that takes two arguments and just returns the first one, and since FALSE is the
+opposite of TRUE, let's define it as such:
+
+```
+FALSE := (λx.λy.y)
+```
+
+When testing TRUE or FALSE we can see that they're working exactly as expected:
+
+```
+(λx.λy.x)(a)(b)
+(λy.x)(b)[x := a]
+(λy.a)(b)
+(a)[y := b]
+(a)
+
+(λx.λy.y)(a)(b)
+(λy.y)(b)[x := a]
+(λy.y)(b)
+(y)[y := b]
+(b)
+
+```
+
