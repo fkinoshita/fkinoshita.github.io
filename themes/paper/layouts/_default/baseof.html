@@ -21,7 +21,7 @@
     {{ end }}
   </main>
 
-  {{ if (eq .Pages.Len 0)}}
+  {{ if not (lt .WordCount 150 )}}
     <footer>
       {{ partial "footer.html" . }}
     </footer>
