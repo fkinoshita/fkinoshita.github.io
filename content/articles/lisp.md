@@ -44,7 +44,7 @@ X
 Lists are one of the most useful data types in Lisp. We can represent more complex data structures like
 key-value pairs and trees, but most of the time we'll use them a simple linear lists.
 
-As we saw in the previous section, a pair may have another pair as one of its elements, which might
+As we saw in the [previous section](#pairs), a pair may have another pair as one of its elements, which might
 look something like this:
 
 ```
@@ -68,7 +68,7 @@ We can now used what's called *list-notation* to remove the extra parentheses an
 
 ## Functions
 
-As said in the introduction, lists can be used for everything, yes, even functions! We saw a bit of that in the pair section with the functions *CAR* and *CDR*.
+As said in the introduction, lists can be used for everything, yes, even functions! We saw a bit of that in the [pairs section](#pairs) with the functions *CAR* and *CDR*.
 
 Lisp uses the following notation to call functions:
 
