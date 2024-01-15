@@ -65,3 +65,21 @@ We can now used what's called *list-notation* to remove the extra parentheses an
 ```
 (A B C)
 ```
+
+## Functions
+
+As said in the introduction, lists can be used for everything, yes, even functions! We saw a bit of that in the pair section with the functions *CAR* and *CDR*.
+
+Lisp uses the following notation to call functions:
+
+```
+> (+ 1 2 3)
+6
+> (LIST 2 3 4)
+(2 3 4)
+> (CAR (LIST 2 3 4))
+2
+```
+
+The first list item is the function name and the rest are arguments to the function.
+Function calls can be nested and used as arguments to other function calls.
