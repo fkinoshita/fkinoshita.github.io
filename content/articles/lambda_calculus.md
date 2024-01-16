@@ -92,9 +92,9 @@ This can be quite confusion because we're substituting x with another x and this
 
 Some people prefer to use new letters and some people prefer to append a `'` to the end, you can use whichever method you prefer.
 
-## Beyond Simple Lambdas
+## Building Upon Lambdas
 
-Now that we're a bit more familiar with lambda expressions and how they work we can start to built more complex object on top of our simple constructs.
+Now that we're a bit more familiar with lambda expressions and how they work we can start to built more complex objects on top of our simple constructs.
 
 It would be pretty useful if we could have simple logic in our little lambda language, producing true or false values.
 
