@@ -73,7 +73,7 @@ When trying to reduce this expression we end up going around in circles, it fail
 
 ## Conversion
 
-When applying two lambda expression that contain the same variable name, something like this:
+When applying two lambda expressions we might encounter something like the following example, where the two expression have the same variable name:
 
 ```
 (λx.xx)(λx.x)
