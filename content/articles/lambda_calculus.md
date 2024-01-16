@@ -21,7 +21,7 @@ The λ-calculus is recursively defined as:
 
 A name is a character or string representing a parameter. For example the letters: a, b, c, and so on.
 
-## Practice
+## Substitution
 
 Now that we got the basics down, let's create a function that takes an argument and returns that same argument, also known as the identity function:
 
@@ -37,9 +37,11 @@ Applying it to an argument y we get back that same argument:
 y
 ```
 
-That weird notation in the second line is called *Beta Reduction*, it follows the form (output)[parameter := input]. In the last example the output was x, the parameter was also x, and the input was y.
+That weird notation in the second line is called *Beta Reduction*, it's just a fancy one of saying substitution. We denote it with the form (output)[parameter := input], meaning to substitute the parameter with the input on the output. 
 
-When applying the reduction we drop the first argument (λx) and we substitute the output (x) with our input (y).
+* First we denote with *Beta Reduction* that (x) will be substituted with (y)
+* We then drop the first argument (λx)
+* Apply the substitution to get (y) and that's our final answer.
 
 Let's look at some more examples:
 
@@ -51,11 +53,12 @@ Let's look at some more examples:
 y
 ```
 
-This one was pretty straight-forward:
+This one was also pretty straight-forward:
 
-* first we denote with *Beta Reduction* that x will be substituted with λz.z
-* then we apply the substitution to get ((λz.z) y)
-* we then substitute z with y and get y as our final answer.
+* First we denote with *Beta Reduction* that (x) will be substituted with (λz.z)
+* We then apply the substitution to get ((λz.z) y)
+* Denote again that (z) will be substituted with (y)
+* We apply the substitution to get just (y), our final answer.
 
 What about this next one:
 
@@ -66,7 +69,28 @@ What about this next one:
 
 ```
 
-When trying to reduct this expression we end up going around in circles, it fails to reduce using *Beta Reduction*.
+When trying to reduce this expression we end up going around in circles, it fails to reduce using *Beta Reduction*.
+
+## Conversion
+
+When applying two lambda expression that contain the same variable name, something like this:
+
+```
+(λx.xx)(λx.x)
+```
+
+This can be quite confusion because we're substituting x with another x and this can get quite messy on bigger expression, luckily we can use what's called *Alpha Conversion*, you just change one of them to use a new variable name. 
+
+```
+(λx.xx)(λx.x)
+(λx.xx)(λy.y)
+
+(λx.x)x
+(λx.x)x'
+
+```
+
+Some people prefer to use new letters and some people prefer to append a `'` to the end, you can use whichever method you prefer.
 
 ## Beyond Simple Lambdas
 
