@@ -70,7 +70,7 @@ We can now used what's called *list-notation* to remove the extra parentheses an
 
 As said in the introduction, lists can be used for everything, yes, even functions! We saw a bit of that in the [pairs section](#pairs) with the functions *CAR* and *CDR*.
 
-Lisp uses the following notation to call functions:
+Lisp uses this (<function-name> ... <args>) notation to call functions:
 
 ```
 > (+ 1 2 3)
