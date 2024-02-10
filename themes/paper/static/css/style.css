@@ -90,7 +90,8 @@ em {
 }
 
 img {
-  width: 100%;
+  width: auto;
+  height: 100%;
   font-style: italic;
 }
 
@@ -117,6 +118,10 @@ li {
 }
 
 @media (min-width: 1000px) {
+  picture {
+    margin-left: var(--left-margin);
+  }
+
   ul, ol {
     margin-left: var(--left-margin);
   }
